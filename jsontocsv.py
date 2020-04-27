@@ -9,7 +9,12 @@ import io
 import plotly
 
 with open("tempeReview.json", "r", encoding="utf-8") as jsonFile:
-    data = json.load(jsonFile)
+    data2 = json.load(jsonFile)
+    data=[]
+    rest='bhosqo-Q1xp67iLqrd1Rbw'
+    for i in range(len(data2)):
+        if(data2[i]['business_id']==rest):
+            data.append(data2[i])
     jsonFile.close()
 
 fileOutput = 'example.csv'
