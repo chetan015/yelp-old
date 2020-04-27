@@ -47,6 +47,18 @@ var layout = {
     rangeselector: {buttons: [
         {
           count: 1,
+          label: '1d',
+          step: 'day',
+          stepmode: 'backward'
+        },
+        {
+          count: 7,
+          label: '1w',
+          step: 'day',
+          stepmode: 'backward'
+        },
+        {
+          count: 1,
           label: '1m',
           step: 'month',
           stepmode: 'backward'
